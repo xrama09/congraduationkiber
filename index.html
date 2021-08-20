@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <title>Congraduation ❣</title>
+    <style>
+        *{
+            font-family: 'Nanum Pen Script', cursive;
+        }
+        body{
+            background-color: black; 
+        }
+        .envelope {
+            background-image: url('https://2.bp.blogspot.com/-sZ0ugJLWkI0/Ur1GPaI4j_I/AAAAAAAAcaE/t08ufIizPm8/s400/present_box.png');
+            background-size: cover;
+            background-position: center;
+            width: 220px;
+            height: 220px;
+            margin: 200px auto 0px auto;
+            cursor: pointer;
+        }
+    
+        h1 {
+            text-align: center;
+            color: white;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .poto {
+        	background-size: cover;
+            background-position: center;
+            width: 270px;
+            height: 590px;
+            margin: 50px auto 0px auto;
+        }
+
+        .button1 {
+  			background-color: royalblue; /* Green */
+  			border: none;
+  			border-radius: 8px;
+  			color: white;
+  			padding: 15px 32px;
+  			text-align: center;
+  			text-decoration: none;
+  			display: inline-block;
+  			font-size: 16px;
+  			transition-duration: 0.4s;
+  			margin-left: 17%;
+
+		}
+        .button2 {
+  			background-color: deeppink; /* Green */
+  			border: none;
+  			border-radius: 8px;
+  			color: white;
+  			padding: 15px 32px;
+  			text-align: center;
+  			text-decoration: none;
+  			display: inline-block;
+  			font-size: 16px;
+  			transition-duration: 0.4s;
+  			
+		}
+		.button1:hover {
+  			background-color: paleturquoise; /* Green */
+  			color: white;
+		}
+		.button2:hover {
+  			background-color: paleturquoise; /* Green */
+  			color: white;
+		}
+
+        .messagebox {
+            width: 400px;
+            margin: auto;
+            font-size: 20px;
+            line-height: 30px;
+            background-color: ivory;
+            color: #455F89;
+            padding: 30px;
+            box-shadow: 0px 0px 10px 0px white;
+        }
+              
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 20px;
+        }
+        @media screen and (max-width: 760px) {
+            .messagebox {
+                width: 300px;
+                font-size: 20px;
+                line-height: 30px;
+                padding: 20px;
+            }
+            h1 {
+                font-size: 28px;
+            }
+            .envelope {
+                margin: 150px auto 0px auto;
+            
+    </style>
+
+</head>
+	<body>
+		<h1>hewwo kiber</h1>
+		<div class="poto">
+			<img src="https://64.media.tumblr.com/cc6597157dbe53058ec0862061e76b24/8a4d8dbe7168dde7-f5/s1280x1920/0cd31da817d0980c556b35c7ffd7a389d64ddd90.jpg" style="width:270px; margin: 0px auto 10px auto;">
+		</div>
+		<h1>gimana udh sidankk</h1>
+		<button  class="button1" id='btn_mau' 
+			onclick="document.location='kesini.html'">senank</button>&nbsp;
+		<button  class="button2" id='btn_gamau' onclick='gamau(this)'
+			style='position:absolute'>apa lu gjlas</button>
+	</body>
+	<script>
+		function gamau(id){
+			var mau = document.getElementById('btn_mau');
+			var i = Math.floor(Math.random()*300)+1;
+			var j = Math.floor(Math.random()*100)+mau.offsetTop;
+			id.style.left = i+'px';
+			id.style.top = j+'px';
+		}
+	</script>
+</html>
